@@ -1,0 +1,5 @@
+<launch>
+  <node name="tomato_cluster_registration" pkg="stem_detection" type="tomato_cluster_registration.py" output="log"/>
+  <node name="extract_pcl" pkg="stem_detection" type="extract_pcl" output="log"/>
+  <node name="stem_server" pkg="stem_detection" type="stem_server.py" output="screen"/>
+</launch>
